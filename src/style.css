@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, sans-serif; }
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 26px; }
+  .header__top_logo {
+    width: 30px;
+    height: 30px; }
+  .header__top_nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 65%;
+    padding: 0; }
+    .header__top_nav_list {
+      margin-top: 4px;
+      margin-right: 8%;
+      list-style-type: none;
+      display: block;
+      white-space: nowrap; }
+      .header__top_nav_list_link {
+        text-decoration: none;
+        font-family: Avenir;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3D4E61; }
+.header__image {
+  height: 464px;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.section {
+  padding: 0 calc(50% - 450px); }
+  .section__apartament_title {
+    font-family: Avenir;
+    font-size: 36px;
+    line-height: 42px;
+    color: #3D4E61;
+    margin-top: 39px;
+    margin-bottom: 10px; }
+  .section__apartament_under-title {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #687C94;
+    margin-bottom: 30px; }
+  .section__apartament_info {
+    font-size: 16px;
+    line-height: 19px;
+    color: #3D4E61;
+    margin-bottom: 35px; }
+    .section__apartament_info_1, .section__apartament_info_2 {
+      margin-right: 4%; }
+  .section__apartament_about {
+    width: 495px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D4E61;
+    margin-bottom: 44px; }
+    .section__apartament_about_contact-host {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 19px;
+      color: #3D4E61;
+      margin-bottom: 44px; }
+  .section__apartament_amenities_title {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #3D4E61; }
+  .section__apartament_box-1 {
+    display: flex;
+    flex-direction: column; }
+
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/Avenir-Book.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+/*# sourceMappingURL=style.css.map */
