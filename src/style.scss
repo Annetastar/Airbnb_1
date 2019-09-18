@@ -4,6 +4,10 @@ body {
   font-family: Avenir, sans-serif;
 }
 
+.main_section {
+  padding: 39px calc(50% - 450px);
+}
+
 .header {
   &__top {
     display: flex;
@@ -48,14 +52,21 @@ body {
   }
 }
 .section {
-  display: flex;
-  justify-content: space-between;
-  padding: 39px calc(50% - 450px);
+  > .left-block {
+    margin-top: -330px;
+    margin-bottom: 75px;
+  }
+
+  //display: flex;
+  //justify-content: space-between;
+  //padding: 39px calc(50% - 450px);
   &__apartament {
     display: flex;
     flex-direction: column;
+    margin-bottom: 70px;
     &_title {
       font-family: Avenir;
+      font-weight: bold;
       font-size: 36px;
       line-height: 42px;
       color: #3D4E61;
@@ -138,6 +149,8 @@ body {
     }
   }
   &_booking {
+    position: sticky;
+    top: 0;
     height: 330px;
     width: 319px;
     border: 1px solid #E1E7ED;
@@ -146,6 +159,7 @@ body {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    margin-left: 60%;
     &_price {
       margin-bottom: 35px;
     }
@@ -175,12 +189,114 @@ body {
       font-size: 16px;
       line-height: 19px;
       text-align: center;
+      cursor: pointer;
     }
   }
 }
+/* Section Review */
+.section__reviews {
+  padding-right: 50%;
+  &_title {
+    margin-bottom: 30px;
+  }
+  &_user {
+    display: flex;
+    margin-bottom: 23px;
+    > .user-photo {
+      width: 50px;
+      height: 50px;
+      background: #C4C4C4;
+      border-radius: 50%;
+      margin-right: 7%;
+    }
+    &_profile {
+      display: flex;
+      flex-direction: column;
+      &_name {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: #3D4E61;
+        margin: 0;
+      }
+      &_date {
+        margin: 0;
+        font-size: 14px;
+        line-height: 16px;
+        color: #3D4E61;
+      }
+    }
+      &_review {
+        font-size: 16px;
+        line-height: 19px;
+        color: #3D4E61;
+        margin-bottom: 50px;
+      }
+  }
+}
+/* Host section */
+.section__host {
+  margin-right: 50%;
+  &-title{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #3D4E61;
+    margin-bottom: 11px;
+  }
+  &_under-title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #3D4E61;
+  }
+  &_about {
+    font-size: 16px;
+    line-height: 19px;
+    color: #3D4E61;
+    margin-bottom: 50px;
+  }
+  &_button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #118488;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #118488;
+    padding: 15px 25px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 
+.footer {
+  > hr {
+    box-shadow: 0px -1px 0px #E1E7ED;
+  }
 
-
+  &_columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 44px calc(50% - 400px);
+    &_column {
+      display: flex;
+      flex-direction: column;
+      &_step {
+        font-size: 16px;
+        line-height: 19px;
+        color: #3D4E61;
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+      }
+      &_title {
+        font-size: 16px;
+        line-height: 19px;
+        color: #3D4E61;
+      }
+    }
+  }
+}
 
 
 
@@ -190,4 +306,28 @@ body {
   src: url("../fonts/Avenir-Book.ttf");
   font-style: normal;
   font-weight: normal;
+}
+
+@media screen and (max-width: 899px) {
+  .section {
+    margin-top: 350px;
+    padding: 0 25%;
+    &_booking {
+      display: none;
+    }
+    &__reviews {
+      padding: 0;
+    }
+    &__host {
+      margin: 0;
+    }
+  }
+}
+
+.footer {
+  &_columns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
