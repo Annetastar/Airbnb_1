@@ -29,7 +29,6 @@ body {
       white-space: nowrap; }
       .header__top_nav_list_link {
         text-decoration: none;
-        font-family: Avenir;
         font-size: 16px;
         line-height: 19px;
         color: #3D4E61; }
@@ -47,7 +46,6 @@ body {
   flex-direction: column;
   margin-bottom: 70px; }
   .section__apartament_title {
-    font-family: Avenir;
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
@@ -212,7 +210,8 @@ body {
     color: #118488;
     padding: 15px 25px;
     font-size: 16px;
-    line-height: 22px; }
+    line-height: 22px;
+    cursor: pointer; }
 
 .footer > hr {
   box-shadow: 0px -1px 0px #E1E7ED; }
@@ -241,18 +240,35 @@ body {
   font-style: normal;
   font-weight: normal; }
 @media screen and (max-width: 899px) {
+  .header__top_nav {
+    margin: auto; }
+
   .section {
     margin-top: 350px;
     padding: 0 25%; }
+    .section__apartament_about {
+      width: 100%; }
     .section_booking {
       display: none; }
+      .section_booking_button {
+        display: block; }
     .section__reviews {
       padding: 0; }
     .section__host {
-      margin: 0; } }
-.footer_columns {
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
+      margin: 0; }
+
+  .footer_columns {
+    display: flex;
+    flex-direction: column;
+    text-align: center; } }
+@media screen and (max-width: 490px) {
+  .header__top_nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .header__top_nav_list {
+      white-space: normal; }
+  .header__top > img {
+    height: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
