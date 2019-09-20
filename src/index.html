@@ -10,8 +10,13 @@
   <title>AirBnB</title>
 </head>
  <header class="header">
+   <div class="header_main">
+   <img src="../images/logo.png" alt="logo" class="header_main_logo">
    <nav class="header__top">
-     <img src="../images/logo.png" alt="logo" class="header__top_logo">
+     <input id="menu__toggle" type="checkbox" />
+     <label class="menu__btn" for="menu__toggle">
+       <span></span>
+     </label>
      <ul class="header__top_nav">
        <li class="header__top_nav_list">
          <a href="#" class="header__top_nav_list_link">Become a host</a>
@@ -25,6 +30,7 @@
      </ul>
      <img src="../images/photo.png" alt="photo">
    </nav>
+   </div>
   <div class="header__image"></div>
  </header>
  <main class="main_section">
@@ -49,8 +55,8 @@
          <span class="section__apartament_info_3">1 bath</span>
        </div>
          <p class="section__apartament_about">City Apartment is newly renovated in the heart of Budapest, right in the city center. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-         <span class="section__apartament_about_contact-host">Contact host</span>
-         <h6 class="section__apartament_amenities_title">Amenities</h6>
+         <a href="#" class="section__apartament_about_contact-host">Contact host</a>
+         <h2 class="section__apartament_amenities_title">Amenities</h2>
        <div class="section__apartament_amenities_box">
          <div class="section__apartament_amenities_box-1">
            <span class="section__apartament_amenities_box-1_elevator">Elevator</span>
@@ -61,26 +67,30 @@
            <span class="section__apartament_amenities_box-2_kitchen">Kitchen</span>
          </div>
          </div>
-           <h6 class="section__apartament_show">Show All Amenities</h6>
+           <a href="#" class="section__apartament_show">Show All Amenities</a>
          </div>
      <div class="section__reviews">
        <h2 class="section__reviews_title">Reviews</h2>
+       <div class="review_1">
        <div class="section__reviews_user">
-         <div class="section__reviews_user_photo user-photo"></div>
+         <img src="../images/user-2.jpg" class="section__reviews_user_photo user-photo"></img>
          <div class="section__reviews_user_profile">
-         <p class="section__reviews_user_profile_name">John</p>
-         <p class="section__reviews_user_profile_date">September 2016</p>
+         <p class="section__reviews_user_profile_name">John Smith</p>
+         <p class="section__reviews_user_profile_date">August 2019</p>
          </div>
        </div>
        <p class="section__reviews_user_review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-       <div class="section__reviews_user">
-         <div class="section__reviews_user_photo user-photo"></div>
+       </div>
+       <div class="review_2">
+         <div class="section__reviews_user">
+         <img src="../images/user-1.jpg" class="section__reviews_user_photo user-photo">
          <div class="section__reviews_user_profile">
-           <p class="section__reviews_user_profile_name">John</p>
-           <p class="section__reviews_user_profile_date">September 2016</p>
+           <p class="section__reviews_user_profile_name">Anna Ivanova</p>
+           <p class="section__reviews_user_profile_date">September 2019</p>
          </div>
        </div>
        <p class="section__reviews_user_review">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     </div>
      </div>
      <div class="section__host">
        <h4 class="section__host_title">Hosted by Jane</h4>
@@ -94,19 +104,19 @@
   <hr>
   <div class="footer_columns">
     <div class="footer_columns_column">
-      <h5 class="footer_columns_column_title">Airbnb</h5>
+      <h3 class="footer_columns_column_title">Airbnb</h3>
       <a href="#" class="footer_columns_column_step">About</a>
       <a href="#" class="footer_columns_column_step">Press</a>
       <a href="#" class="footer_columns_column_step">Help</a>
     </div>
     <div class="footer_columns_column">
-      <h5 class="footer_columns_column_title">Discover</h5>
+      <h3 class="footer_columns_column_title">Discover</h3>
       <a href="#" class="footer_columns_column_step">Travel credit</a>
       <a href="#" class="footer_columns_column_step">Business</a>
       <a href="#" class="footer_columns_column_step">Guidebooks</a>
     </div>
     <div class="footer_columns_column">
-      <h5 class="footer_columns_column_title">Hosting</h5>
+      <h3 class="footer_columns_column_title">Hosting</h3>
       <a href="#" class="footer_columns_column_step">Why host</a>
       <a href="#" class="footer_columns_column_step">Hospitality</a>
       <a href="#" class="footer_columns_column_step">Community</a>
