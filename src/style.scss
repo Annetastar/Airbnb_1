@@ -355,7 +355,15 @@ $color-popular: #3D4E61;
 
 @media screen and (max-width: 499px){
   .header {
+    &_main {
+    padding: 0;
+      &_logo {
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+  }
     &__top {
+      width: 100%;
         > #menu__toggle {
           opacity: 0;
         }
@@ -418,22 +426,34 @@ $color-popular: #3D4E61;
     transform: rotate(90deg);
   }
   #menu__toggle:checked ~ .header__top_nav{
-    //position: static;
+    position: static;
+    width: 100%;
     visibility: visible;
     left: 0;
   }
+
+  #menu__toggle:checked ~ .header__top {
+
+  }
+
   .header__top_nav {
-    margin-top: 20px;
+    margin-top: 0;
     display: block;
     position: absolute;
     left: 0;
     top: -20px;
     width: 100%;
     visibility: hidden;
-    background-color: #fa91a9;
-    .nav_list {
-      font-size: 30px;
+    background-color: #fff;
+    &_list {
+      margin-top: 20px;
+      &_link {
+        font-size: 30px;
+      }
     }
+  }
+  .header__image {
+    margin-top: 30px;
   }
   .section {
     padding: 0 10%;
